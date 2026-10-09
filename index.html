@@ -195,6 +195,26 @@
       background-color: #e6dfc7;
     }
 
+    /* External-link arrow icon (inherits text color, slides right on hover) */
+    .valdivya-app .icon-arrow {
+      width: 1em;
+      height: 1em;
+      flex: none;
+      transition: transform 0.25s ease;
+    }
+
+    .valdivya-app .btn:hover .icon-arrow,
+    .valdivya-app .link-external:hover .icon-arrow {
+      transform: translateX(4px);
+    }
+
+    /* Inline text links that open an external site */
+    .valdivya-app .link-external {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
     /* Hero Section (Dark Section) */
     .valdivya-app .hero-section {
       background-color: var(--dark);
@@ -496,7 +516,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#capabilities">Capabilities</a></li>
           <li><a href="#workflow">Rovo Dev Process</a></li>
-          <li><a href="https://valdivya.com" target="_blank" rel="noopener noreferrer">Visit Main Site ↗</a></li>
+          <li><a href="https://valdivya.com" class="link-external" target="_blank" rel="noopener noreferrer">Visit Main Site <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a></li>
           <li><a href="mailto:contact@valdivya.com" class="btn btn-accent" style="padding: 0.5rem 1rem;">Contact Us</a></li>
         </ul>
       </nav>
@@ -513,7 +533,7 @@
         Valdivya empowers growing businesses with practical technology, seamless Atlassian workflows, and modern digital experiences. This showcase page was built completely inside <strong>Rovo Dev</strong> using Jira and Atlassian intelligence.
       </p>
       <div class="hero-actions">
-        <a href="https://valdivya.com" class="btn btn-accent" target="_blank" rel="noopener noreferrer">Explore Valdivya.com ↗</a>
+        <a href="https://valdivya.com" class="btn btn-accent" target="_blank" rel="noopener noreferrer">Explore Valdivya.com <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
         <a href="#workflow" class="btn btn-outline">See How It Was Built</a>
       </div>
     </div>
@@ -598,7 +618,7 @@
         <p>Whether you are looking to optimize your Atlassian ecosystem, automate delivery, or build tailored client solutions, Valdivya is here to guide the way.</p>
         <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
           <a href="mailto:contact@valdivya.com" class="btn btn-accent">Email contact@valdivya.com</a>
-          <a href="https://valdivya.com" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Visit valdivya.com ↗</a>
+          <a href="https://valdivya.com" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Visit valdivya.com <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
         </div>
       </div>
     </div>
@@ -622,7 +642,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#capabilities">Capabilities</a></li>
             <li><a href="#workflow">Rovo Dev Process</a></li>
-            <li><a href="https://valdivya.com" target="_blank" rel="noopener noreferrer">Official Site ↗</a></li>
+            <li><a href="https://valdivya.com" class="link-external" target="_blank" rel="noopener noreferrer">Official Site <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a></li>
           </ul>
         </div>
 
